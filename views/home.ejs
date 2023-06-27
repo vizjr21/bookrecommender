@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Recommender</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <section>
+      <h1 class="title-text">Enter the name of a book you enjoy.</h1>
+      <h2 class="subtitle-text">
+        We'll return five books you'll probably like!
+      </h2>
+      <form action="/" method="POST" id="form" onsubmit="processBook(event)">
+        <input type="text" name="book" id="book" />
+        <button type="submit" class="submit-button">Get Recommendations</button>
+      </form>
+      <p id="error">Please enter a book title.</p>
+    </section>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
